@@ -19,11 +19,11 @@ document.addEventListener('DOMContentLoaded', () => {
 function initTheme() {
   const themeToggle = document.getElementById('theme-toggle');
   const htmlEl = document.documentElement;
-  
+
   // Check local storage or system preference
   const savedTheme = localStorage.getItem('theme');
   const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-  
+
   if (savedTheme) {
     htmlEl.setAttribute('data-theme', savedTheme);
   } else {
@@ -31,11 +31,11 @@ function initTheme() {
     htmlEl.setAttribute('data-theme', defaultTheme);
     localStorage.setItem('theme', defaultTheme);
   }
-  
+
   themeToggle.addEventListener('click', () => {
     const currentTheme = htmlEl.getAttribute('data-theme');
     const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-    
+
     htmlEl.setAttribute('data-theme', newTheme);
     localStorage.setItem('theme', newTheme);
   });
@@ -48,7 +48,7 @@ function initHeaderScroll() {
   const header = document.getElementById('header');
   const navLinks = document.querySelectorAll('.nav-link');
   const sections = document.querySelectorAll('section');
-  
+
   const handleScroll = () => {
     // Header shadow/blur on scroll
     if (window.scrollY > 50) {
@@ -56,7 +56,7 @@ function initHeaderScroll() {
     } else {
       header.classList.remove('scrolled');
     }
-    
+
     // Active Link Highlighting on Scroll
     let currentSectionId = '';
     sections.forEach(section => {
@@ -66,7 +66,7 @@ function initHeaderScroll() {
         currentSectionId = section.getAttribute('id');
       }
     });
-    
+
     if (currentSectionId) {
       navLinks.forEach(link => {
         link.classList.remove('active');
@@ -88,11 +88,11 @@ function initMobileMenu() {
   const menuToggle = document.getElementById('menu-toggle');
   const navMenu = document.getElementById('nav-menu');
   const navLinks = document.querySelectorAll('.nav-link');
-  
+
   menuToggle.addEventListener('click', (e) => {
     e.stopPropagation();
     navMenu.classList.toggle('active');
-    
+
     // Toggle hamburger icon animation
     if (navMenu.classList.contains('active')) {
       menuToggle.innerHTML = `
@@ -111,7 +111,7 @@ function initMobileMenu() {
       `;
     }
   });
-  
+
   // Close menu when clicking links
   navLinks.forEach(link => {
     link.addEventListener('click', () => {
@@ -125,7 +125,7 @@ function initMobileMenu() {
       `;
     });
   });
-  
+
   // Close menu when clicking outside
   document.addEventListener('click', (e) => {
     if (!navMenu.contains(e.target) && !menuToggle.contains(e.target)) {
@@ -145,12 +145,12 @@ function initMobileMenu() {
    4. Typing typewriter effect
    ========================================================================== */
 function initTypingEffect() {
-  const words = ["全端網頁工程師", "UI / UX 設計愛好者", "創意數位解決方案專家"];
+  const words = ["南臺科大五專資工三甲的學生"];
   let wordIndex = 0;
   let charIndex = 0;
   let isDeleting = false;
   const typingText = document.getElementById('typing-text');
-  
+
   function type() {
     const currentWord = words[wordIndex];
     if (isDeleting) {
@@ -160,13 +160,13 @@ function initTypingEffect() {
       typingText.textContent = currentWord.substring(0, charIndex + 1);
       charIndex++;
     }
-    
+
     let typeSpeed = 100;
-    
+
     if (isDeleting) {
       typeSpeed /= 2; // Delete faster
     }
-    
+
     if (!isDeleting && charIndex === currentWord.length) {
       typeSpeed = 2000; // Pause at full word
       isDeleting = true;
@@ -175,10 +175,10 @@ function initTypingEffect() {
       wordIndex = (wordIndex + 1) % words.length;
       typeSpeed = 500; // Pause before typing next word
     }
-    
+
     setTimeout(type, typeSpeed);
   }
-  
+
   if (typingText) {
     setTimeout(type, 500);
   }
@@ -190,13 +190,13 @@ function initTypingEffect() {
 function initScrollReveal() {
   const revealElements = document.querySelectorAll('.reveal-el');
   const skillFills = document.querySelectorAll('.skill-progress-fill');
-  
+
   const revealObserver = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add('revealed');
         observer.unobserve(entry.target);
-        
+
         // Trigger skill bars animation if we reveal the skills card container
         if (entry.target.classList.contains('skills-container')) {
           animateSkillBars();
@@ -207,11 +207,11 @@ function initScrollReveal() {
     threshold: 0.15,
     rootMargin: '0px 0px -50px 0px'
   });
-  
+
   revealElements.forEach(el => {
     revealObserver.observe(el);
   });
-  
+
   function animateSkillBars() {
     skillFills.forEach(fill => {
       const targetPercent = fill.getAttribute('data-percent');
@@ -226,15 +226,15 @@ function initScrollReveal() {
 function initPortfolioFilter() {
   const filterBtns = document.querySelectorAll('.filter-btn');
   const cards = document.querySelectorAll('.portfolio-card');
-  
+
   filterBtns.forEach(btn => {
     btn.addEventListener('click', () => {
       // Toggle active states on buttons
       filterBtns.forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
-      
+
       const filterValue = btn.getAttribute('data-filter');
-      
+
       cards.forEach(card => {
         const category = card.getAttribute('data-category');
         if (filterValue === 'all' || category === filterValue) {
@@ -319,24 +319,24 @@ function initLightbox() {
   const lightbox = document.getElementById('project-lightbox');
   const lightboxClose = document.getElementById('lightbox-close');
   const cards = document.querySelectorAll('.portfolio-card');
-  
+
   const lbTitle = document.getElementById('lightbox-title');
   const lbDesc = document.getElementById('lightbox-desc');
   const lbTags = document.getElementById('lightbox-tags');
   const lbImgWrapper = document.getElementById('lightbox-img-wrapper');
   const lbLiveBtn = document.getElementById('btn-lightbox-live');
   const lbSourceBtn = document.getElementById('btn-lightbox-source');
-  
+
   const openLightbox = (projectId) => {
     const data = projectsDetails[projectId];
     if (!data) return;
-    
+
     // Populate details
     lbTitle.textContent = data.title;
     lbDesc.textContent = data.desc;
     lbLiveBtn.setAttribute('href', data.liveUrl);
     lbSourceBtn.setAttribute('href', data.sourceUrl);
-    
+
     // Populate SVG Icon representation
     lbImgWrapper.innerHTML = `
       <span class="portfolio-badge">${data.badge}</span>
@@ -344,7 +344,7 @@ function initLightbox() {
         ${data.icon}
       </svg>
     `;
-    
+
     // Populate tags
     lbTags.innerHTML = '';
     data.tags.forEach(tag => {
@@ -353,17 +353,17 @@ function initLightbox() {
       span.textContent = tag;
       lbTags.appendChild(span);
     });
-    
+
     // Display Modal
     lightbox.classList.add('active');
     document.body.style.overflow = 'hidden'; // Prevent page scroll
   };
-  
+
   const closeLightbox = () => {
     lightbox.classList.remove('active');
     document.body.style.overflow = 'auto'; // Re-enable scroll
   };
-  
+
   // Attach listeners to cards
   cards.forEach(card => {
     card.addEventListener('click', () => {
@@ -371,16 +371,16 @@ function initLightbox() {
       openLightbox(projectId);
     });
   });
-  
+
   lightboxClose.addEventListener('click', closeLightbox);
-  
+
   // Close when clicking outside card content
   lightbox.addEventListener('click', (e) => {
     if (e.target === lightbox) {
       closeLightbox();
     }
   });
-  
+
   // ESC Key listener
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && lightbox.classList.contains('active')) {
@@ -398,10 +398,10 @@ function initContactForm() {
   const emailInput = document.getElementById('form-email');
   const subjectInput = document.getElementById('form-subject');
   const messageInput = document.getElementById('form-message');
-  
+
   const formSuccess = document.getElementById('form-success');
   const resetBtn = document.getElementById('btn-reset-form');
-  
+
   const validateField = (input, errorElId, message) => {
     const errorEl = document.getElementById(errorElId);
     if (!input.value.trim()) {
@@ -415,12 +415,12 @@ function initContactForm() {
       return true;
     }
   };
-  
+
   const validateEmail = () => {
     const errorEl = document.getElementById('error-email');
     const val = emailInput.value.trim();
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    
+
     if (!val) {
       emailInput.classList.add('error');
       errorEl.textContent = '請填寫電子郵件';
@@ -437,22 +437,22 @@ function initContactForm() {
       return true;
     }
   };
-  
+
   // Input validations on typing
   nameInput.addEventListener('input', () => validateField(nameInput, 'error-name', '請填寫姓名'));
   emailInput.addEventListener('input', validateEmail);
   subjectInput.addEventListener('input', () => validateField(subjectInput, 'error-subject', '請填寫主旨'));
   messageInput.addEventListener('input', () => validateField(messageInput, 'error-message-text', '請填寫訊息內容'));
-  
+
   form.addEventListener('submit', (e) => {
     e.preventDefault();
-    
+
     // Execute all validations
     const isNameVal = validateField(nameInput, 'error-name', '請填寫姓名');
     const isEmailVal = validateEmail();
     const isSubjVal = validateField(subjectInput, 'error-subject', '請填寫主旨');
     const isMsgVal = validateField(messageInput, 'error-message-text', '請填寫訊息內容');
-    
+
     if (isNameVal && isEmailVal && isSubjVal && isMsgVal) {
       // Pack details
       const msgData = {
@@ -462,22 +462,22 @@ function initContactForm() {
         message: messageInput.value.trim(),
         timestamp: new Date().toISOString()
       };
-      
+
       // Store in LocalStorage logs
       const currentMessages = JSON.parse(localStorage.getItem('contact_messages') || '[]');
       currentMessages.push(msgData);
       localStorage.setItem('contact_messages', JSON.stringify(currentMessages));
-      
+
       // Animate submit button and reveal success panel
       const submitBtn = document.getElementById('btn-submit-form');
       submitBtn.innerHTML = `送出中...`;
       submitBtn.disabled = true;
-      
+
       setTimeout(() => {
         // Toggle view panels
         form.style.display = 'none';
         formSuccess.style.display = 'flex';
-        
+
         // Reset submit button state
         submitBtn.innerHTML = `
           <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" style="transform: rotate(-15deg);"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
@@ -487,18 +487,18 @@ function initContactForm() {
       }, 1000);
     }
   });
-  
+
   resetBtn.addEventListener('click', () => {
     // Clear inputs
     form.reset();
-    
+
     // Remove styling states
     const inputs = [nameInput, emailInput, subjectInput, messageInput];
     inputs.forEach(inp => inp.classList.remove('error'));
-    
+
     const errors = ['error-name', 'error-email', 'error-subject', 'error-message-text'];
     errors.forEach(errId => document.getElementById(errId).style.display = 'none');
-    
+
     // Toggle view back to form
     formSuccess.style.display = 'none';
     form.style.display = 'block';
