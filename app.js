@@ -305,7 +305,6 @@ function initLightbox() {
 
     // Populate SVG Icon representation
     lbImgWrapper.innerHTML = `
-      <span class="portfolio-badge">${data.badge}</span>
       <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.2" style="width:25%; height:25%; opacity:0.8;">
         ${data.icon}
       </svg>
