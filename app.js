@@ -291,7 +291,6 @@ function initLightbox() {
   const lbTags = document.getElementById('lightbox-tags');
   const lbImgWrapper = document.getElementById('lightbox-img-wrapper');
   const lbLiveBtn = document.getElementById('btn-lightbox-live');
-  const lbSourceBtn = document.getElementById('btn-lightbox-source');
 
   const openLightbox = (projectId) => {
     const data = projectsDetails[projectId];
@@ -301,7 +300,6 @@ function initLightbox() {
     lbTitle.textContent = data.title;
     lbDesc.textContent = data.desc;
     lbLiveBtn.setAttribute('href', data.liveUrl);
-    lbSourceBtn.setAttribute('href', data.sourceUrl);
 
     // Populate SVG Icon representation
     lbImgWrapper.innerHTML = `
