@@ -229,7 +229,7 @@ const projectsDetails = {
     title: "智慧合約虛擬儀表板",
     badge: "Front-End",
     tags: [],
-    desc: "一個極具科技感的區塊鏈資料視覺化平台，能即時監控智慧合約的交易流量、Gas 消耗與鏈上事件分析。",
+    desc: "",
     liveUrl: "https://example.com/project1",
     sourceUrl: "https://github.com/example/project1",
     icon: `<rect x="2" y="3" width="20" height="14" rx="2" stroke-linecap="round"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/>`
@@ -238,7 +238,7 @@ const projectsDetails = {
     title: "分散式 API 閘道系統",
     badge: "Back-End",
     tags: [],
-    desc: "基於 Node.js 叢集架構開發的高效能 API 閘道，支援動態路由轉發、IP 限流防護與 Redis 快取機制。",
+    desc: "",
     liveUrl: "https://example.com/project2",
     sourceUrl: "https://github.com/example/project2",
     icon: `<ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v6c0 1.66 4 3 9 3s9-1.34 9-3V5"/><path d="M3 11v6c0 1.66 4 3 9 3s9-1.34 9-3v-6"/>`
@@ -247,7 +247,7 @@ const projectsDetails = {
     title: "智慧家居控制 App 設計",
     badge: "UI/UX Design",
     tags: [],
-    desc: "以使用者為中心進行研究，設計極簡新擬態 (Neumorphism) 風格的智慧家居操作介面，提升日常操作流暢度。",
+    desc: "",
     liveUrl: "https://example.com/project3",
     sourceUrl: "https://github.com/example/project3",
     icon: `<path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"/><path d="M7.5 10.5C8.32843 10.5 9 9.82843 9 9C9 8.17157 8.32843 7.5 7.5 7.5C6.67157 7.5 6 8.17157 6 9C6 9.82843 6.67157 10.5 7.5 10.5Z"/><path d="M11.5 7.5C12.3284 7.5 13 6.82843 13 6C13 5.17157 12.3284 4.5 11.5 4.5C10.6716 4.5 10 5.17157 10 6C10 6.82843 10.6716 7.5 11.5 7.5Z"/><path d="M16.5 10.5C17.3284 10.5 18 9.82843 18 9C18 8.17157 17.3284 7.5 16.5 7.5C15.6716 7.5 15 8.17157 15 9C15 9.82843 15.6716 10.5 16.5 10.5Z"/><path d="M6 14C6 16.2091 8.68629 18 12 18C15.3137 18 18 16.2091 18 14H6Z"/>`
@@ -256,7 +256,7 @@ const projectsDetails = {
     title: "3D 線上展示互動商城",
     badge: "Front-End",
     tags: [],
-    desc: "運用 Three.js 開發之網頁 3D 商品互動式展示，提供滑鼠拖曳旋轉、變更商品顏色及沉浸式 AR 預覽效果。",
+    desc: "",
     liveUrl: "https://example.com/project4",
     sourceUrl: "https://github.com/example/project4",
     icon: `<path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/>`
@@ -265,7 +265,7 @@ const projectsDetails = {
     title: "即時協同編輯後端架構",
     badge: "Back-End",
     tags: [],
-    desc: "支援多用戶線上編輯同一份文件的 Socket.io 架構，結合 OT (Operational Transformation) 演算法解決衝突。",
+    desc: "",
     liveUrl: "https://example.com/project5",
     sourceUrl: "https://github.com/example/project5",
     icon: `<path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>`
@@ -274,7 +274,7 @@ const projectsDetails = {
     title: "虛擬貨幣交易所 Web 端視覺",
     badge: "UI/UX Design",
     tags: [],
-    desc: "重新定義加密貨幣交易平台的視覺指引，包含自訂下單介面、K線圖表主題色，提升 30% 交易流暢感。",
+    desc: "",
     liveUrl: "https://example.com/project6",
     sourceUrl: "https://github.com/example/project6",
     icon: `<path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="7.5 4.21 12 6.81 16.5 4.21"/><polyline points="7.5 19.79 7.5 14.6 3 12"/><polyline points="16.5 19.79 16.5 14.6 21 12"/><polyline points="12 22.08 12 12 12 6.81"/>`
