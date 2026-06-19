@@ -1,27 +1,30 @@
 <!DOCTYPE html>
 <html lang="zh-TW" data-theme="dark">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+
   <!-- SEO Meta Tags -->
-  <title>極致現代化個人網站 | Portfolio & Resume</title>
+  <title>個人網站 | Personal</title>
   <meta name="description" content="這是一個專為展示個人專業技能、精彩專案與職涯經歷所設計的極致美感個人網站。採用現代化深色毛玻璃風格與精緻微互動。">
   <meta name="keywords" content="個人網站, 作品集, 網頁前端, UI/UX, 履歷, 網頁開發, Portfolio, Web Developer">
   <meta name="author" content="Your Name">
-  
+
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="極致現代化個人網站 | Portfolio & Resume">
   <meta property="og:description" content="這是一個專為展示個人專業技能、精彩專案與職涯經歷所設計的極致美感個人網站。">
   <meta property="og:image" content="">
-  
+
   <!-- Favicon (Inline SVG for maximum simplicity and portability) -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
-  
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+
   <!-- Main Stylesheet -->
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
   <!-- Glowing Background Blobs -->
@@ -32,9 +35,9 @@
   <header class="header" id="header">
     <div class="container nav-container">
       <a href="#hero" class="logo" id="nav-logo">
-        <span>⚡</span>Portfolio
+        <span>⚡</span>Personal
       </a>
-      
+
       <nav>
         <ul class="nav-menu" id="nav-menu">
           <li><a href="#hero" class="nav-link active" id="link-hero">首頁</a></li>
@@ -44,21 +47,24 @@
           <li><a href="#contact" class="nav-link" id="link-contact">聯絡我</a></li>
         </ul>
       </nav>
-      
+
       <div class="nav-actions">
         <button class="theme-toggle" id="theme-toggle" aria-label="切換主題模式">
           <!-- Sun Icon -->
           <svg class="sun-icon" viewBox="0 0 24 24">
-            <path d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zM2 13h2c.55 0 1-.45 1-1s-.45-1-1-1H2c-.55 0-1 .45-1 1s.45 1 1 1zm18 0h2c.55 0 1-.45 1-1s-.45-1-1-1h-2c-.55 0-1 .45-1 1s.45 1 1 1zM11 2v2c0 .55.45 1 1 1s1-.45 1-1V2c0-.55-.45-1-1-1s-1 .45-1 1zm0 18v2c0 .55.45 1 1 1s1-.45 1-1v-2c0-.55-.45-1-1-1s-1 .45-1 1zM5.99 4.58c-.39-.39-1.03-.39-1.41 0s-.39 1.03 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41L5.99 4.58zm12.37 12.37c-.39-.39-1.03-.39-1.41 0s-.39 1.03 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41l-1.06-1.06zm1.06-10.96c.39-.39.39-1.03 0-1.41s-1.03-.39-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06zM7.05 18.01c.39-.39.39-1.03 0-1.41s-1.03-.39-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06z"/>
+            <path
+              d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zM2 13h2c.55 0 1-.45 1-1s-.45-1-1-1H2c-.55 0-1 .45-1 1s.45 1 1 1zm18 0h2c.55 0 1-.45 1-1s-.45-1-1-1h-2c-.55 0-1 .45-1 1s.45 1 1 1zM11 2v2c0 .55.45 1 1 1s1-.45 1-1V2c0-.55-.45-1-1-1s-1 .45-1 1zm0 18v2c0 .55.45 1 1 1s1-.45 1-1v-2c0-.55-.45-1-1-1s-1 .45-1 1zM5.99 4.58c-.39-.39-1.03-.39-1.41 0s-.39 1.03 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41L5.99 4.58zm12.37 12.37c-.39-.39-1.03-.39-1.41 0s-.39 1.03 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41l-1.06-1.06zm1.06-10.96c.39-.39.39-1.03 0-1.41s-1.03-.39-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06zM7.05 18.01c.39-.39.39-1.03 0-1.41s-1.03-.39-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06z" />
           </svg>
           <!-- Moon Icon -->
           <svg class="moon-icon" viewBox="0 0 24 24">
-            <path d="M12.3 22h-.1c-5.5 0-10-4.5-10-10 0-4.8 3.5-8.9 8.2-9.8.6-.1 1.2.3 1.3.9.1.6-.2 1.2-.8 1.4-3.5 1-6 4.1-6 7.7 0 4.4 3.6 8 8 8 3.6 0 6.7-2.5 7.7-6 .2-.6.8-.9 1.4-.8.6.1 1 .7.9 1.3-.9 4.7-5 8.2-9.8 8.3z"/>
+            <path
+              d="M12.3 22h-.1c-5.5 0-10-4.5-10-10 0-4.8 3.5-8.9 8.2-9.8.6-.1 1.2.3 1.3.9.1.6-.2 1.2-.8 1.4-3.5 1-6 4.1-6 7.7 0 4.4 3.6 8 8 8 3.6 0 6.7-2.5 7.7-6 .2-.6.8-.9 1.4-.8.6.1 1 .7.9 1.3-.9 4.7-5 8.2-9.8 8.3z" />
           </svg>
         </button>
-        
+
         <button class="menu-toggle" id="menu-toggle" aria-label="打開選單">
-          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round">
             <line x1="3" y1="12" x2="21" y2="12"></line>
             <line x1="3" y1="6" x2="21" y2="6"></line>
             <line x1="3" y1="18" x2="21" y2="18"></line>
@@ -90,7 +96,7 @@
             <a href="#contact" class="btn btn-secondary" id="btn-hero-contact">聯絡我</a>
           </div>
         </div>
-        
+
         <div class="hero-visual reveal-el delay-200">
           <div class="interactive-avatar-frame">
             <div class="avatar-glow-ring"></div>
@@ -103,9 +109,12 @@
                     <stop offset="100%" stop-color="var(--secondary)" />
                   </linearGradient>
                 </defs>
-                <circle cx="100" cy="100" r="85" fill="none" stroke="url(#avatar-grad)" stroke-width="4" stroke-dasharray="10 5" />
-                <path d="M60,110 L90,140 L150,80" fill="none" stroke="url(#avatar-grad)" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" />
-                <circle cx="100" cy="100" r="45" fill="none" stroke="var(--text-primary)" stroke-width="2" opacity="0.3" />
+                <circle cx="100" cy="100" r="85" fill="none" stroke="url(#avatar-grad)" stroke-width="4"
+                  stroke-dasharray="10 5" />
+                <path d="M60,110 L90,140 L150,80" fill="none" stroke="url(#avatar-grad)" stroke-width="12"
+                  stroke-linecap="round" stroke-linejoin="round" />
+                <circle cx="100" cy="100" r="45" fill="none" stroke="var(--text-primary)" stroke-width="2"
+                  opacity="0.3" />
                 <g fill="var(--secondary)" opacity="0.8">
                   <circle cx="60" cy="70" r="8" />
                   <circle cx="140" cy="140" r="10" />
@@ -125,17 +134,18 @@
           <span class="section-subtitle">About me</span>
           <h2 class="section-title">關於我 & 專業技能</h2>
         </div>
-        
+
         <div class="about-grid">
           <div class="about-info reveal-el">
-            <h3 style="font-family: var(--font-title); font-size: 1.75rem; font-weight: 700; margin-bottom: 1rem;">用程式碼與設計，解決真實世界的問題</h3>
+            <h3 style="font-family: var(--font-title); font-size: 1.75rem; font-weight: 700; margin-bottom: 1rem;">
+              用程式碼與設計，解決真實世界的問題</h3>
             <p class="about-text">
               我擁有超過 3 年的網頁開發經驗，擅長將複雜的需求拆解為乾淨、模組化且易於維護的程式結構。在追求效能的同時，我也非常注重微小細節，如流暢的動畫過渡和響應式介面設計，以帶給使用者最優質的感受。
             </p>
             <p class="about-text">
               我不斷學習新技術，保持思維的靈敏與創新。無論是獨立作業或是團隊協作，我都能提供高品質的數位解決方案。
             </p>
-            
+
             <div class="about-stats">
               <div class="stat-card glass-panel reveal-el delay-100">
                 <span class="stat-number">3+</span>
@@ -151,16 +161,20 @@
               </div>
             </div>
           </div>
-          
+
           <div class="skills-container glass-panel reveal-el delay-200" style="padding: 2.5rem;">
             <div class="skills-list">
               <!-- Category 1 -->
               <div class="skill-category">
                 <h4 class="skill-category-title">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16.5 9.4 7.55 18.24a1.25 1.25 0 0 1-1.9-1.9l8.84-8.95a1.25 1.25 0 0 1 1.9 0l.1.1Z"/><path d="m19 13-1.8-1.8a2 2 0 0 0-2.8 0L9.8 15.8"/><path d="M21 21v-4a2 2 0 0 0-2-2h-4"/></svg>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M16.5 9.4 7.55 18.24a1.25 1.25 0 0 1-1.9-1.9l8.84-8.95a1.25 1.25 0 0 1 1.9 0l.1.1Z" />
+                    <path d="m19 13-1.8-1.8a2 2 0 0 0-2.8 0L9.8 15.8" />
+                    <path d="M21 21v-4a2 2 0 0 0-2-2h-4" />
+                  </svg>
                   前端開發 (Front-End)
                 </h4>
-                
+
                 <div class="skill-item">
                   <div class="skill-info">
                     <span class="skill-name">HTML5 / CSS3 / JavaScript (ES6+)</span>
@@ -170,7 +184,7 @@
                     <div class="skill-progress-fill" data-percent="95%"></div>
                   </div>
                 </div>
-                
+
                 <div class="skill-item">
                   <div class="skill-info">
                     <span class="skill-name">Vue.js / React.js</span>
@@ -185,10 +199,15 @@
               <!-- Category 2 -->
               <div class="skill-category">
                 <h4 class="skill-category-title">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="2" width="20" height="8" rx="2" />
+                    <rect x="2" y="14" width="20" height="8" rx="2" />
+                    <line x1="6" y1="6" x2="6.01" y2="6" />
+                    <line x1="6" y1="18" x2="6.01" y2="18" />
+                  </svg>
                   後端開發 (Back-End)
                 </h4>
-                
+
                 <div class="skill-item">
                   <div class="skill-info">
                     <span class="skill-name">Node.js (Express) / Python (FastAPI)</span>
@@ -198,7 +217,7 @@
                     <div class="skill-progress-fill" data-percent="80%"></div>
                   </div>
                 </div>
-                
+
                 <div class="skill-item">
                   <div class="skill-info">
                     <span class="skill-name">MySQL / MongoDB / PostgreSQL</span>
@@ -213,10 +232,12 @@
               <!-- Category 3 -->
               <div class="skill-category">
                 <h4 class="skill-category-title">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                  </svg>
                   設計與工具 (UI/UX & Tools)
                 </h4>
-                
+
                 <div class="skill-item">
                   <div class="skill-info">
                     <span class="skill-name">Figma / Git & GitHub / Docker</span>
@@ -240,7 +261,7 @@
           <span class="section-subtitle">My Works</span>
           <h2 class="section-title">精選專案作品</h2>
         </div>
-        
+
         <!-- Filters -->
         <div class="portfolio-filters reveal-el">
           <button class="filter-btn active" data-filter="all">全部作品</button>
@@ -248,7 +269,7 @@
           <button class="filter-btn" data-filter="backend">後端開發</button>
           <button class="filter-btn" data-filter="design">UI/UX 設計</button>
         </div>
-        
+
         <!-- Projects Grid -->
         <div class="portfolio-grid">
           <!-- Card 1 -->
@@ -256,7 +277,11 @@
             <div class="portfolio-img-wrapper">
               <span class="portfolio-badge">Front-End</span>
               <!-- Project Vector Icon -->
-              <svg viewBox="0 0 24 24" fill="none" stroke="url(#avatar-grad)" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2" stroke-linecap="round"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="url(#avatar-grad)" stroke-width="1.5">
+                <rect x="2" y="3" width="20" height="14" rx="2" stroke-linecap="round" />
+                <line x1="8" y1="21" x2="16" y2="21" />
+                <line x1="12" y1="17" x2="12" y2="21" />
+              </svg>
             </div>
             <div class="portfolio-info">
               <h3 class="portfolio-card-title">智慧合約虛擬儀表板</h3>
@@ -273,7 +298,11 @@
           <div class="portfolio-card glass-panel reveal-el delay-100" data-category="backend" data-project-id="p2">
             <div class="portfolio-img-wrapper">
               <span class="portfolio-badge">Back-End</span>
-              <svg viewBox="0 0 24 24" fill="none" stroke="url(#avatar-grad)" stroke-width="1.5"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v6c0 1.66 4 3 9 3s9-1.34 9-3V5"/><path d="M3 11v6c0 1.66 4 3 9 3s9-1.34 9-3v-6"/></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="url(#avatar-grad)" stroke-width="1.5">
+                <ellipse cx="12" cy="5" rx="9" ry="3" />
+                <path d="M3 5v6c0 1.66 4 3 9 3s9-1.34 9-3V5" />
+                <path d="M3 11v6c0 1.66 4 3 9 3s9-1.34 9-3v-6" />
+              </svg>
             </div>
             <div class="portfolio-info">
               <h3 class="portfolio-card-title">分散式 API 閘道系統</h3>
@@ -290,7 +319,17 @@
           <div class="portfolio-card glass-panel reveal-el delay-200" data-category="design" data-project-id="p3">
             <div class="portfolio-img-wrapper">
               <span class="portfolio-badge">UI/UX Design</span>
-              <svg viewBox="0 0 24 24" fill="none" stroke="url(#avatar-grad)" stroke-width="1.5"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"/><path d="M7.5 10.5C8.32843 10.5 9 9.82843 9 9C9 8.17157 8.32843 7.5 7.5 7.5C6.67157 7.5 6 8.17157 6 9C6 9.82843 6.67157 10.5 7.5 10.5Z"/><path d="M11.5 7.5C12.3284 7.5 13 6.82843 13 6C13 5.17157 12.3284 4.5 11.5 4.5C10.6716 4.5 10 5.17157 10 6C10 6.82843 10.6716 7.5 11.5 7.5Z"/><path d="M16.5 10.5C17.3284 10.5 18 9.82843 18 9C18 8.17157 17.3284 7.5 16.5 7.5C15.6716 7.5 15 8.17157 15 9C15 9.82843 15.6716 10.5 16.5 10.5Z"/><path d="M6 14C6 16.2091 8.68629 18 12 18C15.3137 18 18 16.2091 18 14H6Z"/></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="url(#avatar-grad)" stroke-width="1.5">
+                <path
+                  d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" />
+                <path
+                  d="M7.5 10.5C8.32843 10.5 9 9.82843 9 9C9 8.17157 8.32843 7.5 7.5 7.5C6.67157 7.5 6 8.17157 6 9C6 9.82843 6.67157 10.5 7.5 10.5Z" />
+                <path
+                  d="M11.5 7.5C12.3284 7.5 13 6.82843 13 6C13 5.17157 12.3284 4.5 11.5 4.5C10.6716 4.5 10 5.17157 10 6C10 6.82843 10.6716 7.5 11.5 7.5Z" />
+                <path
+                  d="M16.5 10.5C17.3284 10.5 18 9.82843 18 9C18 8.17157 17.3284 7.5 16.5 7.5C15.6716 7.5 15 8.17157 15 9C15 9.82843 15.6716 10.5 16.5 10.5Z" />
+                <path d="M6 14C6 16.2091 8.68629 18 12 18C15.3137 18 18 16.2091 18 14H6Z" />
+              </svg>
             </div>
             <div class="portfolio-info">
               <h3 class="portfolio-card-title">智慧家居控制 App 設計</h3>
@@ -307,7 +346,12 @@
           <div class="portfolio-card glass-panel reveal-el" data-category="frontend" data-project-id="p4">
             <div class="portfolio-img-wrapper">
               <span class="portfolio-badge">Front-End</span>
-              <svg viewBox="0 0 24 24" fill="none" stroke="url(#avatar-grad)" stroke-width="1.5"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="url(#avatar-grad)" stroke-width="1.5">
+                <path
+                  d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+                <polyline points="3.27 6.96 12 12.01 20.73 6.96" />
+                <line x1="12" y1="22.08" x2="12" y2="12" />
+              </svg>
             </div>
             <div class="portfolio-info">
               <h3 class="portfolio-card-title">3D 線上展示互動商城</h3>
@@ -324,11 +368,14 @@
           <div class="portfolio-card glass-panel reveal-el delay-100" data-category="backend" data-project-id="p5">
             <div class="portfolio-img-wrapper">
               <span class="portfolio-badge">Back-End</span>
-              <svg viewBox="0 0 24 24" fill="none" stroke="url(#avatar-grad)" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="url(#avatar-grad)" stroke-width="1.5">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+              </svg>
             </div>
             <div class="portfolio-info">
               <h3 class="portfolio-card-title">即時協同編輯後端架構</h3>
-              <p class="portfolio-card-desc">支援多用戶線上編輯同一份文件的 Socket.io 架構，結合 OT (Operational Transformation) 演算法解決衝突。</p>
+              <p class="portfolio-card-desc">支援多用戶線上編輯同一份文件的 Socket.io 架構，結合 OT (Operational Transformation) 演算法解決衝突。
+              </p>
               <div class="portfolio-tags">
                 <span class="portfolio-tag">Socket.io</span>
                 <span class="portfolio-tag">Redis Pub/Sub</span>
@@ -341,7 +388,14 @@
           <div class="portfolio-card glass-panel reveal-el delay-200" data-category="design" data-project-id="p6">
             <div class="portfolio-img-wrapper">
               <span class="portfolio-badge">UI/UX Design</span>
-              <svg viewBox="0 0 24 24" fill="none" stroke="url(#avatar-grad)" stroke-width="1.5"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="7.5 4.21 12 6.81 16.5 4.21"/><polyline points="7.5 19.79 7.5 14.6 3 12"/><polyline points="16.5 19.79 16.5 14.6 21 12"/><polyline points="12 22.08 12 12 12 6.81"/></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="url(#avatar-grad)" stroke-width="1.5">
+                <path
+                  d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+                <polyline points="7.5 4.21 12 6.81 16.5 4.21" />
+                <polyline points="7.5 19.79 7.5 14.6 3 12" />
+                <polyline points="16.5 19.79 16.5 14.6 21 12" />
+                <polyline points="12 22.08 12 12 12 6.81" />
+              </svg>
             </div>
             <div class="portfolio-info">
               <h3 class="portfolio-card-title">虛擬貨幣交易所 Web 端視覺</h3>
@@ -364,7 +418,7 @@
           <span class="section-subtitle">Resume</span>
           <h2 class="section-title">工作與學術經歷</h2>
         </div>
-        
+
         <div class="timeline">
           <!-- Timeline Item 1 -->
           <div class="timeline-item reveal-el">
@@ -415,65 +469,82 @@
           <span class="section-subtitle">Get in touch</span>
           <h2 class="section-title">與我聯絡合作</h2>
         </div>
-        
+
         <div class="contact-grid">
           <!-- Info Details -->
           <div class="contact-info reveal-el">
             <div class="contact-card glass-panel">
-              <h3 style="font-family: var(--font-title); font-size: 1.5rem; font-weight: 700; margin-bottom: 0.5rem;">聯絡資訊</h3>
-              <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">對我的作品有興趣嗎？或是有任何合作提案，歡迎隨時透過表單或電子郵件與我聯繫，我將在 24 小時內回覆您。</p>
-              
+              <h3 style="font-family: var(--font-title); font-size: 1.5rem; font-weight: 700; margin-bottom: 0.5rem;">
+                聯絡資訊</h3>
+              <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">歡迎隨時透過表單或電子郵件與我聯繫，我將在
+                24 小時內回覆您。</p>
+
               <div class="contact-item">
                 <div class="contact-icon">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                    <polyline points="22,6 12,13 2,6" />
+                  </svg>
                 </div>
                 <div class="contact-detail">
                   <h4>電子郵件</h4>
-                  <a href="mailto:alex.dev@example.com" id="contact-email-link">alex.dev@example.com</a>
+                  <a href="mailto:alex.dev@example.com" id="contact-email-link">5b2g0025@stust.edu.tw</a>
                 </div>
               </div>
 
               <div class="contact-item">
                 <div class="contact-icon">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                    <circle cx="12" cy="10" r="3" />
+                  </svg>
                 </div>
                 <div class="contact-detail">
                   <h4>所在位置</h4>
-                  <p>台灣，台北市</p>
+                  <p>台灣，台南市</p>
                 </div>
               </div>
             </div>
-            
+
             <!-- Social Link Buttons -->
             <div class="social-links">
-              <a href="https://github.com" class="social-btn" target="_blank" id="social-github" aria-label="GitHub">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              <a href="https://github.com/5b2g0025" class="social-btn" target="_blank" id="social-github"
+                aria-label="GitHub">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                </svg>
               </a>
-              <a href="https://linkedin.com" class="social-btn" target="_blank" id="social-linkedin" aria-label="LinkedIn">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-              </a>
-              <a href="https://instagram.com" class="social-btn" target="_blank" id="social-instagram" aria-label="Instagram">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              <a href="https://www.instagram.com/lcc_1026/" class="social-btn" target="_blank" id="social-instagram"
+                aria-label="Instagram">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                </svg>
               </a>
             </div>
           </div>
-          
+
           <!-- Contact Form Panel -->
           <div class="contact-form-panel glass-panel reveal-el delay-200">
             <h3 class="form-title">發送訊息給我</h3>
-            
+
             <!-- Dynamic Success Notice -->
             <div class="form-success-container" id="form-success">
               <div class="success-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                  stroke-linejoin="round">
                   <polyline points="20 6 9 17 4 12"></polyline>
                 </svg>
               </div>
-              <h4 style="font-family: var(--font-title); font-size: 1.5rem; font-weight: 700; color: var(--text-primary);">發送成功！</h4>
+              <h4
+                style="font-family: var(--font-title); font-size: 1.5rem; font-weight: 700; color: var(--text-primary);">
+                發送成功！</h4>
               <p style="color: var(--text-secondary);">非常感謝您的來信，我會盡快與您聯絡。</p>
               <button class="btn btn-secondary" id="btn-reset-form" style="margin-top: 1rem;">再次發送</button>
             </div>
-            
+
             <!-- Standard Form -->
             <form id="contact-form" novalidate>
               <div class="form-grid">
@@ -488,7 +559,7 @@
                   <span class="error-message" id="error-email">請輸入有效的電子郵件</span>
                 </div>
               </div>
-              
+
               <div class="form-group full-width" style="margin-bottom: 1.5rem;">
                 <label for="form-subject" class="form-label">主旨</label>
                 <input type="text" id="form-subject" class="form-input" placeholder="合作提案、工作機會..." required>
@@ -500,9 +571,13 @@
                 <textarea id="form-message" class="form-input" placeholder="請描述您的想法與需求..." required></textarea>
                 <span class="error-message" id="error-message-text">請填寫訊息內容</span>
               </div>
-              
+
               <button type="submit" class="btn btn-primary" id="btn-submit-form" style="width: 100%;">
-                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" style="transform: rotate(-15deg);"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5"
+                  style="transform: rotate(-15deg);">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
                 發送訊息
               </button>
             </form>
@@ -516,10 +591,10 @@
   <footer class="footer">
     <div class="container footer-content">
       <a href="#hero" class="footer-logo" id="footer-logo">
-        <span>⚡</span>Alex Portfolio
+        <span>⚡</span>Personal
       </a>
       <p class="footer-text" id="footer-copyright">
-        &copy; 2026 Alex Dev. 保留所有權利。Designed with ❤️
+        &copy; Personal Dev.
       </p>
     </div>
   </footer>
@@ -542,11 +617,18 @@
         <p class="lightbox-desc" id="lightbox-desc">專案詳細說明描述內容...</p>
         <div class="lightbox-actions">
           <a href="#" class="btn btn-primary" id="btn-lightbox-live" target="_blank">
-            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+              <polyline points="15 3 21 3 21 9" />
+              <line x1="10" y1="14" x2="21" y2="3" />
+            </svg>
             線上預覽
           </a>
           <a href="#" class="btn btn-secondary" id="btn-lightbox-source" target="_blank">
-            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+              <path
+                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+            </svg>
             程式碼
           </a>
         </div>
@@ -557,4 +639,5 @@
   <!-- Main JavaScript File -->
   <script src="app.js"></script>
 </body>
+
 </html>
