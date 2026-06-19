@@ -226,7 +226,7 @@ function initScrollReveal() {
    ========================================================================== */
 const projectsDetails = {
   p1: {
-    title: "智慧合約虛擬儀表板",
+    title: "期末專題",
     badge: "Front-End",
     tags: [],
     desc: "",
@@ -235,7 +235,7 @@ const projectsDetails = {
     icon: `<rect x="2" y="3" width="20" height="14" rx="2" stroke-linecap="round"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/>`
   },
   p2: {
-    title: "分散式 API 閘道系統",
+    title: "倒水遊戲",
     badge: "Back-End",
     tags: [],
     desc: "",
@@ -244,7 +244,7 @@ const projectsDetails = {
     icon: `<ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v6c0 1.66 4 3 9 3s9-1.34 9-3V5"/><path d="M3 11v6c0 1.66 4 3 9 3s9-1.34 9-3v-6"/>`
   },
   p3: {
-    title: "智慧家居控制 App 設計",
+    title: "踩地雷",
     badge: "UI/UX Design",
     tags: [],
     desc: "",
@@ -253,7 +253,7 @@ const projectsDetails = {
     icon: `<path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"/><path d="M7.5 10.5C8.32843 10.5 9 9.82843 9 9C9 8.17157 8.32843 7.5 7.5 7.5C6.67157 7.5 6 8.17157 6 9C6 9.82843 6.67157 10.5 7.5 10.5Z"/><path d="M11.5 7.5C12.3284 7.5 13 6.82843 13 6C13 5.17157 12.3284 4.5 11.5 4.5C10.6716 4.5 10 5.17157 10 6C10 6.82843 10.6716 7.5 11.5 7.5Z"/><path d="M16.5 10.5C17.3284 10.5 18 9.82843 18 9C18 8.17157 17.3284 7.5 16.5 7.5C15.6716 7.5 15 8.17157 15 9C15 9.82843 15.6716 10.5 16.5 10.5Z"/><path d="M6 14C6 16.2091 8.68629 18 12 18C15.3137 18 18 16.2091 18 14H6Z"/>`
   },
   p4: {
-    title: "3D 線上展示互動商城",
+    title: "明信片",
     badge: "Front-End",
     tags: [],
     desc: "",
@@ -262,7 +262,7 @@ const projectsDetails = {
     icon: `<path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/>`
   },
   p5: {
-    title: "即時協同編輯後端架構",
+    title: "待辦清單",
     badge: "Back-End",
     tags: [],
     desc: "",
@@ -271,7 +271,7 @@ const projectsDetails = {
     icon: `<path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>`
   },
   p6: {
-    title: "虛擬貨幣交易所 Web 端視覺",
+    title: "天氣查詢",
     badge: "UI/UX Design",
     tags: [],
     desc: "",
