@@ -463,28 +463,47 @@ function initContactForm() {
         timestamp: new Date().toISOString()
       };
 
-      // Store in LocalStorage logs
+      // Store in LocalStorage logs for fallback/record keeping
       const currentMessages = JSON.parse(localStorage.getItem('contact_messages') || '[]');
       currentMessages.push(msgData);
       localStorage.setItem('contact_messages', JSON.stringify(currentMessages));
 
-      // Animate submit button and reveal success panel
+      // Animate submit button
       const submitBtn = document.getElementById('btn-submit-form');
       submitBtn.innerHTML = `送出中...`;
       submitBtn.disabled = true;
 
-      setTimeout(() => {
-        // Toggle view panels
-        form.style.display = 'none';
-        formSuccess.style.display = 'flex';
-
+      // Actual email submission using FormSubmit AJAX Endpoint
+      fetch('https://formsubmit.co/ajax/5b2g0025@stust.edu.tw', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify(msgData)
+      })
+      .then(response => response.json())
+      .then(data => {
+        if (data.success === 'true' || data.success === true) {
+          // Toggle view panels to show success message
+          form.style.display = 'none';
+          formSuccess.style.display = 'flex';
+        } else {
+          alert('發送失敗，請稍後再試。原因: ' + (data.message || '未知錯誤'));
+        }
+      })
+      .catch(error => {
+        console.error('Error submitting form:', error);
+        alert('發送時發生錯誤，請檢查網路連線後再試。');
+      })
+      .finally(() => {
         // Reset submit button state
         submitBtn.innerHTML = `
           <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" style="transform: rotate(-15deg);"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
           發送訊息
         `;
         submitBtn.disabled = false;
-      }, 1000);
+      });
     }
   });
 
