@@ -396,7 +396,6 @@ function initContactForm() {
   const form = document.getElementById('contact-form');
   const nameInput = document.getElementById('form-name');
   const emailInput = document.getElementById('form-email');
-  const subjectInput = document.getElementById('form-subject');
   const messageInput = document.getElementById('form-message');
 
   const formSuccess = document.getElementById('form-success');
@@ -441,7 +440,6 @@ function initContactForm() {
   // Input validations on typing
   nameInput.addEventListener('input', () => validateField(nameInput, 'error-name', '請填寫姓名'));
   emailInput.addEventListener('input', validateEmail);
-  subjectInput.addEventListener('input', () => validateField(subjectInput, 'error-subject', '請填寫主旨'));
   messageInput.addEventListener('input', () => validateField(messageInput, 'error-message-text', '請填寫訊息內容'));
 
   form.addEventListener('submit', (e) => {
@@ -450,15 +448,13 @@ function initContactForm() {
     // Execute all validations
     const isNameVal = validateField(nameInput, 'error-name', '請填寫姓名');
     const isEmailVal = validateEmail();
-    const isSubjVal = validateField(subjectInput, 'error-subject', '請填寫主旨');
     const isMsgVal = validateField(messageInput, 'error-message-text', '請填寫訊息內容');
 
-    if (isNameVal && isEmailVal && isSubjVal && isMsgVal) {
+    if (isNameVal && isEmailVal && isMsgVal) {
       // Pack details
       const msgData = {
         name: nameInput.value.trim(),
         email: emailInput.value.trim(),
-        subject: subjectInput.value.trim(),
         message: messageInput.value.trim(),
         timestamp: new Date().toISOString()
       };
@@ -512,10 +508,10 @@ function initContactForm() {
     form.reset();
 
     // Remove styling states
-    const inputs = [nameInput, emailInput, subjectInput, messageInput];
+    const inputs = [nameInput, emailInput, messageInput];
     inputs.forEach(inp => inp.classList.remove('error'));
 
-    const errors = ['error-name', 'error-email', 'error-subject', 'error-message-text'];
+    const errors = ['error-name', 'error-email', 'error-message-text'];
     errors.forEach(errId => document.getElementById(errId).style.display = 'none');
 
     // Toggle view back to form
