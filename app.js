@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initMobileMenu();
   initTypingEffect();
   initScrollReveal();
-  initPortfolioFilter();
   initLightbox();
   initContactForm();
 });
@@ -220,40 +219,7 @@ function initScrollReveal() {
   }
 }
 
-/* ==========================================================================
-   6. Portfolio Classification Filter
-   ========================================================================== */
-function initPortfolioFilter() {
-  const filterBtns = document.querySelectorAll('.filter-btn');
-  const cards = document.querySelectorAll('.portfolio-card');
 
-  filterBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      // Toggle active states on buttons
-      filterBtns.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-
-      const filterValue = btn.getAttribute('data-filter');
-
-      cards.forEach(card => {
-        const category = card.getAttribute('data-category');
-        if (filterValue === 'all' || category === filterValue) {
-          card.style.display = 'flex';
-          setTimeout(() => {
-            card.style.opacity = '1';
-            card.style.transform = 'translateY(0) scale(1)';
-          }, 50);
-        } else {
-          card.style.opacity = '0';
-          card.style.transform = 'translateY(20px) scale(0.95)';
-          setTimeout(() => {
-            card.style.display = 'none';
-          }, 300); // Wait for transition animation
-        }
-      });
-    });
-  });
-}
 
 /* ==========================================================================
    7. Portfolio Detail Lightbox Modal
