@@ -34,14 +34,13 @@
   <!-- Header Section -->
   <header class="header" id="header">
     <div class="container nav-container">
-      <a href="#hero" class="logo" id="nav-logo">
+      <a href="#about" class="logo" id="nav-logo">
         <span>⚡</span>Personal
       </a>
 
       <nav>
         <ul class="nav-menu" id="nav-menu">
-          <li><a href="#hero" class="nav-link active" id="link-hero">首頁</a></li>
-          <li><a href="#about" class="nav-link" id="link-about">關於我</a></li>
+          <li><a href="#about" class="nav-link active" id="link-about">關於我</a></li>
           <li><a href="#portfolio" class="nav-link" id="link-portfolio">作品集</a></li>
           <li><a href="#contact" class="nav-link" id="link-contact">聯絡我</a></li>
         </ul>
@@ -74,60 +73,8 @@
   </header>
 
   <main>
-    <!-- Hero Section -->
-    <section class="hero" id="hero">
-      <div class="container hero-grid">
-        <div class="hero-content reveal-el">
-          <div class="hero-tag">
-            <span></span>開放合作中 / Open to Work
-          </div>
-          <h1 class="hero-title">
-            我是 <span class="highlight">李季芹</span>
-          </h1>
-          <div class="typing-container">
-            是一位 <span class="typing-text" id="typing-text"></span>
-          </div>
-          <p class="hero-desc">
-            平常喜歡貓狗，之前家裡養過土狗，後來過世了。平常也喜歡追星，會聽她們的音樂、買專輯/周邊及看她們的YT影片。
-          </p>
-          <div class="hero-buttons">
-            <a href="#portfolio" class="btn btn-primary" id="btn-hero-portfolio">瀏覽作品</a>
-            <a href="#contact" class="btn btn-secondary" id="btn-hero-contact">聯絡我</a>
-          </div>
-        </div>
-
-        <div class="hero-visual reveal-el delay-200">
-          <div class="interactive-avatar-frame">
-            <div class="avatar-glow-ring"></div>
-            <div class="avatar-inner">
-              <!-- Inline SVG Avatar Graphic representing Web/Tech -->
-              <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                  <linearGradient id="avatar-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" stop-color="var(--primary)" />
-                    <stop offset="100%" stop-color="var(--secondary)" />
-                  </linearGradient>
-                </defs>
-                <circle cx="100" cy="100" r="85" fill="none" stroke="url(#avatar-grad)" stroke-width="4"
-                  stroke-dasharray="10 5" />
-                <path d="M60,110 L90,140 L150,80" fill="none" stroke="url(#avatar-grad)" stroke-width="12"
-                  stroke-linecap="round" stroke-linejoin="round" />
-                <circle cx="100" cy="100" r="45" fill="none" stroke="var(--text-primary)" stroke-width="2"
-                  opacity="0.3" />
-                <g fill="var(--secondary)" opacity="0.8">
-                  <circle cx="60" cy="70" r="8" />
-                  <circle cx="140" cy="140" r="10" />
-                  <circle cx="150" cy="60" r="6" />
-                </g>
-              </svg>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- About & Skills Section -->
-    <section class="about" id="about">
+    <section class="about" id="about" style="padding-top: 10rem;">
       <div class="container">
         <div class="section-title-wrapper reveal-el">
           <span class="section-subtitle">About me</span>
@@ -136,14 +83,22 @@
 
         <div class="about-grid">
           <div class="about-info reveal-el">
-            <h3 style="font-family: var(--font-title); font-size: 1.75rem; font-weight: 700; margin-bottom: 1rem;">
-              用程式碼與設計，解決真實世界的問題</h3>
-            <p class="about-text">
-              我擁有超過 3 年的網頁開發經驗，擅長將複雜的需求拆解為乾淨、模組化且易於維護的程式結構。在追求效能的同時，我也非常注重微小細節，如流暢的動畫過渡和響應式介面設計，以帶給使用者最優質的感受。
+            <div class="hero-tag" style="margin-bottom: 1.5rem;">
+              <span></span>開放合作中 / Open to Work
+            </div>
+            <h1 class="hero-title" style="font-size: 3.5rem; line-height: 1.2; margin-bottom: 1rem;">
+              我是 <span class="highlight">李季芹</span>
+            </h1>
+            <div class="typing-container" style="font-size: 1.85rem; height: auto; margin-bottom: 1.5rem;">
+              是一位 <span class="typing-text" id="typing-text"></span>
+            </div>
+            <p class="about-text" style="font-size: 1.1rem; margin-bottom: 2rem;">
+              平常喜歡貓狗，之前家裡養過土狗，後來過世了。平常也喜歡追星，會聽她們的音樂、買專輯/周邊及看她們的YT影片。
             </p>
-            <p class="about-text">
-              我不斷學習新技術，保持思維的靈敏與創新。無論是獨立作業或是團隊協作，我都能提供高品質的數位解決方案。
-            </p>
+            <div class="hero-buttons" style="margin-bottom: 2.5rem; display: flex; gap: 1rem;">
+              <a href="#portfolio" class="btn btn-primary" id="btn-hero-portfolio">瀏覽作品</a>
+              <a href="#contact" class="btn btn-secondary" id="btn-hero-contact">聯絡我</a>
+            </div>
 
             <div class="about-stats">
               <div class="stat-card glass-panel reveal-el delay-100">
@@ -537,7 +492,7 @@
   <!-- Footer Section -->
   <footer class="footer">
     <div class="container footer-content">
-      <a href="#hero" class="footer-logo" id="footer-logo">
+      <a href="#about" class="footer-logo" id="footer-logo">
         <span>⚡</span>Personal
       </a>
       <p class="footer-text" id="footer-copyright">
