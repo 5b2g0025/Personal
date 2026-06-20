@@ -232,6 +232,7 @@ const projectsDetails = {
     desc: "",
     liveUrl: "https://5b2g0025.github.io/TermProject/",
     sourceUrl: "https://5b2g0025.github.io/TermProject/",
+    imgUrl: "https://yt3.googleusercontent.com/A5fabchdvlsXf1GNklvOkmy282HZx3zrNzhsL3MbplH2cgIeu72FQ6rxumZSEO70_ABNZU341Q=s900-c-k-c0x00ffffff-no-rj",
     icon: `<rect x="2" y="3" width="20" height="14" rx="2" stroke-linecap="round"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/>`
   },
   p2: {
