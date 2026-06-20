@@ -258,8 +258,8 @@ const projectsDetails = {
     badge: "Front-End",
     tags: [],
     desc: "",
-    liveUrl: "https://github.com/5b2g0025/Personal",
-    sourceUrl: "https://github.com/5b2g0025/Personal",
+    liveUrl: "http://localhost:5173/index.html",
+    sourceUrl: "http://localhost:5173/index.html",
     icon: `<path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/>`
   },
   p5: {
@@ -267,8 +267,8 @@ const projectsDetails = {
     badge: "Back-End",
     tags: [],
     desc: "",
-    liveUrl: "https://github.com/5b2g0025/Personal",
-    sourceUrl: "https://github.com/5b2g0025/Personal",
+    liveUrl: "http://localhost:5173/todo.html",
+    sourceUrl: "http://localhost:5173/todo.html",
     icon: `<path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>`
   },
   p6: {
@@ -276,8 +276,8 @@ const projectsDetails = {
     badge: "UI/UX Design",
     tags: [],
     desc: "",
-    liveUrl: "https://github.com/5b2g0025/Personal",
-    sourceUrl: "https://github.com/5b2g0025/Personal",
+    liveUrl: "http://localhost:5173/weather.html",
+    sourceUrl: "http://localhost:5173/weather.html",
     icon: `<path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="7.5 4.21 12 6.81 16.5 4.21"/><polyline points="7.5 19.79 7.5 14.6 3 12"/><polyline points="16.5 19.79 16.5 14.6 21 12"/><polyline points="12 22.08 12 12 12 6.81"/>`
   }
 };
