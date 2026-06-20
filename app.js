@@ -270,6 +270,7 @@ const projectsDetails = {
     desc: "",
     liveUrl: "http://localhost:5173/todo.html",
     sourceUrl: "http://localhost:5173/todo.html",
+    imgUrl: "https://png.pngtree.com/template/20211008/ourmid/pngtree-to-do-list-image_704928.png",
     icon: `<path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>`
   },
   p6: {
