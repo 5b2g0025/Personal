@@ -241,6 +241,7 @@ const projectsDetails = {
     desc: "",
     liveUrl: "https://github.com/5b2g0025/Personal",
     sourceUrl: "https://github.com/5b2g0025/Personal",
+    imgUrl: "https://play-lh.googleusercontent.com/JcFPlMThqwpd90HZpBaUPMAK0QYS3LhXq05oRcYbZfiVdMLoTKsAVOog0fKuGNuANi4A1hmiMeTYczNwkBlqs-Y",
     icon: `<ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v6c0 1.66 4 3 9 3s9-1.34 9-3V5"/><path d="M3 11v6c0 1.66 4 3 9 3s9-1.34 9-3v-6"/>`
   },
   p3: {
@@ -301,12 +302,18 @@ function initLightbox() {
     lbDesc.textContent = data.desc;
     lbLiveBtn.setAttribute('href', data.liveUrl);
 
-    // Populate SVG Icon representation
-    lbImgWrapper.innerHTML = `
-      <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.2" style="width:25%; height:25%; opacity:0.8;">
-        ${data.icon}
-      </svg>
-    `;
+    // Populate SVG Icon representation or Image
+    if (data.imgUrl) {
+      lbImgWrapper.innerHTML = `
+        <img src="${data.imgUrl}" alt="${data.title}" style="width: 100%; height: 100%; object-fit: cover;">
+      `;
+    } else {
+      lbImgWrapper.innerHTML = `
+        <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.2" style="width:25%; height:25%; opacity:0.8;">
+          ${data.icon}
+        </svg>
+      `;
+    }
 
     // Populate tags
     lbTags.innerHTML = '';
